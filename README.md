@@ -24,10 +24,15 @@ This lab project focuses on network security and penetration testing, specifical
 - Windows IIS Manager
 - virtualBox
 
-## Steps
 
-- Scan the network and explore web services.
-- Set up and execute an ARP poisoning attack using Ettercap.
-- Capture and analyze network traffic during the MITM attack.
-- Modify network traffic using Ettercap filters.
-- Analyze the impact of the attack and discuss countermeasures.
+## IP Addresses:
+- Kali: 192.168.0.100
+- Windows Server: 192.168.0.100
+- Debian Client: 192.168.0.101
+  
+## Steps
+- Scan the network using nmap to ensure all 3 VMs are communicating
+  <img src="https://i.postimg.cc/hjpHcV3V/Picture1.png" />
+
+- Open the Ettercap GUI and ensure it is listening on the internal network interface that has connectivity to the other VMs
+  <img src="https://i.postimg.cc/RVCRMXGK/Picture2.png" />
