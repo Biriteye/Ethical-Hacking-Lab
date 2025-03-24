@@ -29,26 +29,35 @@ This lab project focuses on network security and penetration testing, specifical
   
 ## Steps
 - Scan the network using nmap to ensure all 3 VMs are communicating
+
   <img src="https://i.postimg.cc/hjpHcV3V/Picture1.png" />
 
 - Open the Ettercap GUI change listening to the internal network interface that has connectivity to the other VMs
+
   <img src="https://i.postimg.cc/RVCRMXGK/Picture2.png" />
 
 - Perform a Host scan on Ettercap
-  <br>
+
   <img src="https://i.postimg.cc/MZm52h0z/Picture3.png" />
 
 - Check the ARP table from Windows and Debian before we use Ettercap to poison the tables
+
   <img src="https://i.postimg.cc/fLBV5jXQ/Picture4.png" />
-  
+
   <img src="https://i.postimg.cc/Y9p41yvx/Picture5.png" />
 
 - Back in Ettercap set the Windows and Debian as targets and initiate the poisoning attack
+
   <img src="https://i.postimg.cc/jjYvrK1d/Picture6.png" />
-  
+
   <img src="https://i.postimg.cc/KzZNRfF6/Picture7.png" />
   
-- Check the ARP tables to confirm that the Windows and Debian now have the same Mac address as the Kali machine
+- Check the ARP tables, the Windows and Debian should have the same Mac address as the Kali machine
+
   <img src="https://i.postimg.cc/bwtLMd3B/Picture8.png" />
 
   <img src="https://i.postimg.cc/SKLdS30L/Picture9.png" />
+
+- When we browse to a web application on the debian client all traffic will be intercepted by the Kali machine completing the MITM attack
+
+  <img src="https://i.postimg.cc/rsGRxXJg/Picture10.png" />
