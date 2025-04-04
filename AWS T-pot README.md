@@ -1,4 +1,4 @@
-# AWS t-Pot Honeypot
+# AWS T-Pot Honeypot
 
 ## Objective
 
